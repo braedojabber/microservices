@@ -1,0 +1,116 @@
+:root{
+    --nn-border-radius: 5px;
+    --nn-bg-color:#fff;
+    --nn-card-text-color:#000;
+    --nn-no-loc-icon-color:#000;
+}
+
+.nn-review-inner-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 1%;
+    justify-content: center;
+}
+.nn-review-map-cont {
+    height: 264px;
+    margin: -10px;
+    overflow: hidden;
+}
+.nn-review-map-cont.no-location{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.nn-review-cont {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: space-between;
+    background-color: var(--nn-bg-color);
+    border-radius: var(--nn-border-radius);
+    box-shadow: 0 0 5px rgba(0,0,0,0.25);
+    padding: 10px;
+}
+img.nn-review-map{
+    width: 100%;
+    border-top-left-radius:  calc( var(--nn-border-radius) - 1px);
+    border-top-right-radius:  calc( var(--nn-border-radius) - 1px);
+}
+.nn-review-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.nn-review-rating-cat.nn-review-rating-cat-overall {
+    width: 100%;
+}
+
+.nn-review-header div:nth-child(4) {
+    display: none;
+}
+
+.nn-review-header h4 {
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 10px;
+    color:var(--nn-card-text-color)
+}
+.nn-review-body{
+    color:var(--nn-card-text-color)
+}
+.nn-review-rating-cat-name{
+    color:var(--nn-card-text-color)
+}
+/* Default style when a map is present above the title */
+.nn-review-header h3 {
+    font-size: 32px;
+    line-height: 120%;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    margin-top:20px;
+    color:var(--nn-card-text-color)
+}
+
+.nn-review-inner-cont div[itemprop="aggregateRating"] {
+    margin-bottom: 20px;
+    width:100%;
+}
+
+.nn-review-cont hr {
+    display: none;
+}
+
+.nn-review-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.nn-review-cont br{
+    display: none;
+}
+.nn-review-cont div[itemprop="itemReviewed"]{
+    display: none;
+}
+.nn-review-cont h4 br{
+    display: block;
+}
+.nn-review-inner-cont h2{
+    width:100%;
+}
+div#nn-review-map-main{
+    display:none;
+}
+.nolo-neg-space{
+    fill: var(--nn-bg-color);
+  }
+  .nolo-cross {
+    fill:var(--nn-no-loc-icon-color)
+  }
+ .nn-review-map-cont.no-location svg{
+    width:160px;
+ }
